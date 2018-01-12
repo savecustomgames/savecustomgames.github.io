@@ -1,0 +1,440 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="/styles.css" rel="stylesheet" type="text/css">
+<script>
+if (!document.cookie.split(';').some(x => x.trim().startsWith('visited')))
+{
+var language = navigator.language || navigator.userLanguage
+document.cookie += "visited=1"
+if (language.startsWith("ru")) window.location.replace("/ru.html")
+}
+</script>
+<title>Save Custom Games</title>
+</head>
+<body>
+<div class="Container HeaderContainer">
+<div class="Inner">
+<video autoplay muted loop preload="auto">
+<source type="video/webm" src="/images/header.webm">
+<source type="video/mp4" src="/images/header.mp4">
+</video>
+<div class="VideoMask"></div>
+<div class="HeaderTitle">
+<h1>SAVE</h1>
+<h2>CUSTOM GAMES</h1>
+</div>
+<span class="LocalizationList">
+<div>English</div>
+<a href="/ru.html">Русский (Russian)</a>
+</span>
+</div>
+</div>
+<div class="Container IntroductionContainer">
+<div class="Inner">
+<h2>INTRODUCTION</h3>
+<p>Custom Games in Dota represent a continuation of the tradition that gave birth to Dota, but morale within the custom game community is at an all time low. In the wake of the <a target="_blank" href="https://www.reddit.com/r/DotA2/comments/7jvwwp/how_valve_completely_destroyed_custom_games_with/">Frostivus</a> <a target="_blank" href="https://www.reddit.com/r/DotA2/comments/7bc84s/valve_this_custom_game_contest_is_a_bad_joke/">Fiasco</a>, many developers are feeling betrayed and ignored by Valve, feeling that developing custom games is a hopeless uphill battle against a company that doesn’t care. Custom Games have a bright future but only with the support of Valve. Help us get that message to them. <br><br>Update 13th of January - There are currently bots <a target="_blank" href="https://www.reddit.com/r/DotA2/comments/7pvm1p/custom_games_not_playable_because_of_bots/">spamming</a> links to this website in custom game lobbies. This website is not associated with the bots and the modding community does not endorse the behaviour of these botters.</p>
+</div>
+</div>
+<div class="Container ComplainContainer">
+<div class="Inner">
+<h2>IMPROVE COMMUNICATION</h2>
+<div>
+<video autoplay muted loop preload="auto" poster="/images/reason_communication_preview.png">
+<source type="video/webm" src="/images/reason_communication.webm">
+<source type="video/mp4" src="/images/reason_communication.mp4">
+</video>
+</div>
+<p>Communication is what is needed most. Its understandable that Valve is not always interested in custom games and they have many different creative endeavours, but it&#39;s not unreasonable for 1 or 2 employees to touch base with the modding community on a regular basis. The <a target="_blank" href="https://discord.gg/Mvn4gww">modding community</a> has tried to meet Valve halfway, creating and maintaining an extensive <a target="_blank" href="https://github.com/ModDota/BugTracker/issues">bug-tracker</a>, in hope that Valve will use this resource to address issues. Valve has viewed the tracker on a few occasions, mainly when Reddit threads containing the tracker made the front page. Valve is capable of this type of sustained cooperation as they have done a fantastic job building the bot API with the help of the community.</p>
+</div>
+</div>
+<div class="Container ComplainContainer">
+<div class="Inner">
+<h2>FIX FREQUENT PLAYER DISCONNECTS</h2>
+<div>
+<video autoplay muted loop preload="auto" poster="/images/reason_disconnects_preview.png">
+<source type="video/webm" src="/images/reason_disconnects.webm">
+<source type="video/mp4" src="/images/reason_disconnects.mp4">
+</video>
+</div>
+<p>For <a target="_blank" href="https://www.reddit.com/r/DotA2/comments/7ehmdt/how_can_it_still_be_after_literally_years_that/">years</a>, custom games have been plagued with predictable and widespread disconnecting in the beginning phase of games. This problem affects most games, including Valve custom games, Overthrow and 10v10. This problem is usually fixed by reconnecting after a disconnect. The problem is entirely on Valve’s end, and unfortunately we cannot do anything about it from the standpoint as a custom game developer.</p>
+</div>
+</div>
+<div class="Container ComplainContainer">
+<div class="Inner">
+<h2>REVAMP ARCADE LAYOUT</h2>
+<div>
+<video autoplay muted loop preload="auto" poster="/images/reason_overview_preview.png">
+<source type="video/webm" src="/images/reason_overview.webm">
+<source type="video/mp4" src="/images/reason_overview.mp4">
+</video>
+</div>
+<p>Replace the top 10 view list with a list of all lobbies, grouping lobbies and ranking lobbies by the amount of lobbies, remove workshop vote and fix the <a target="_blank" href="https://www.reddit.com/r/DotA2/comments/7lpdq7/suggestions_to_improve_open_lobbies_widget/">problem</a> where players end up in solo lobbies when clicking play. A ping should be shown next to grouped lobbies to indicate the ping of the best lobby for the player in that group. Pressing the Play button on grouped lobbies should join the best lobby for the player. A “Local Lobbies” window should show custom games that only have one lobby and are in the same region as a player, this will allow newer custom games to be able to find players. Local lobbies should be ranked by age of lobby.</p>
+</div>
+</div>
+<div class="Container ComplainContainer">
+<div class="Inner">
+<h2>IMPROVE DEBUGGING TOOLS</h2>
+<div>
+<video autoplay muted loop preload="auto" poster="/images/reason_debugging_preview.png">
+<source type="video/webm" src="/images/reason_debugging.webm">
+<source type="video/mp4" src="/images/reason_debugging.mp4">
+</video>
+</div>
+<p>Developers have little to no ability to track down information leading to the cause of various bugs and crashes, both in the local testing client and especially in the live servers. The types of crashes are wide in range, from some being as simple as a function being renamed by Valve, to others as complicated as an order crashing the server because the order ended up being invalid with the given parameters. This often leads to months of wasted time for developers to track down these bugs. Simple tools, such as the option to forward the server Lua output to a separate site or workshop page, enabling the specate button or re-enabling replays of custom games would help greatly.</p>
+</div>
+</div>
+<div class="Container ComplainContainer">
+<div class="Inner">
+<h2>AUTOMATED DEDICATED SERVERS</h2>
+<div>
+<video autoplay muted loop preload="auto" poster="/images/reason_servers_preview.png">
+<source type="video/webm" src="/images/reason_servers.webm">
+<source type="video/mp4" src="/images/reason_servers.mp4">
+</video>
+</div>
+<p>Valve&#39;s <a target="_blank" href="https://www.reddit.com/r/DotA2/comments/6n18qx/something_must_change_about_custom_games_and/">sporadic</a> and seemingly manual process of giving out dedicated servers to custom games has resulted in even popular games not having them, while older games that nobody plays anymore have dedicated servers. Developers have even resorted to cannibalizing older custom games entries to take advantage of their dedicated servers status (Open Angel Arena taking Pimp My Peon&#39;s Entry). Valve should instead automate the process of giving dedicated servers, so that once a game reaches a certain popularity, servers will be allocated, or reallocated if the game becomes unplayed.</p>
+</div>
+</div>
+<div class="Container ComplainContainer">
+<div class="Inner">
+<h2>PROVIDE CHANGELOG FOR API UPDATES</h2>
+<div>
+<video autoplay muted loop preload="auto" poster="/images/reason_updates_preview.png">
+<source type="video/webm" src="/images/reason_updates.webm">
+<source type="video/mp4" src="/images/reason_updates.mp4">
+</video>
+</div>
+<p>For a company that prides itself on <a target="_blank" href="https://imgur.com/jszUNxr">supporting</a> user generated content, it&#39;s strange that so little consideration is given for the modding community. Updating a dynamic game like DotA 2 is bound to <a target="_blank" href="https://www.reddit.com/r/DotA2/comments/5iy4k5/700_is_killing_my_custom_game_and_i_cant_do/">break</a> custom games sometimes, but too frequently Valve makes slight or seemingly unnecessary changes (like renaming a function and then changing it back a month later) which breaks many custom games, leaving the community to scramble and try to figure out what has changed and what broke. It would be trivially easy for Valve to provide a simple changelog of updates to the API when they release updates and it would help modders recover much faster from game breaking updates.</p>
+</div>
+</div>
+<div class="Container ContactsContainer">
+<div class="Inner">
+<h3>WHAT YOU CAN DO</h3>
+<p>Tell Valve that custom games are important for Dota 2 community!</p>
+<div class="Cards">
+<div class="Card">
+<a rel="noreferrer" target="_blank" href="mailto:dotacustomgames@valvesoftware.com">
+<img src="/images/contact_custom_team.png">
+<h4>Write to Dota 2 Custom Games team</h4>
+</a>
+</div>
+<div class="Card">
+<a rel="noreferrer" target="_blank" href="http://www.valvesoftware.com/email.php?recipient=Dota%202%20Team">
+<img src="/images/contact_dota_team.png">
+<h4>Write to Dota 2 Team</h4>
+</a>
+</div>
+<div class="Card">
+<a rel="noreferrer" target="_blank" href="https://dev.dota2.com/forumdisplay.php?f=484">
+<img src="/images/contact_forum.png">
+<h4>Make a thread on Dota 2 Dev Forum</h4>
+</a>
+</div>
+</div>
+</div>
+</div><div class="Container container_developers">
+<div class="container_developers__header">
+<div class="Inner">
+<h1>This was created and endorsed by the custom game community</h1>
+</div>
+</div>
+<div class="container_developers__list">
+<div class="Inner">
+<div class="developer">
+<img class="developer__hero" src="/images/icons/nyx.png">
+<div class="developer__name-and-flag">
+<h3>FireToad</h3>
+<img src="http://steamcommunity-a.akamaihd.net/public/images/countryflags/br.gif">
+</div>
+<div class="developer__made">
+<ul>
+<li>Creator of <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=440115357">Dota IMBA</a> and <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=1138461301">Epic Boss Challenge</a>.</li>
+</ul>
+</div>
+</div>
+<div class="developer">
+<img class="developer__hero" src="/images/icons/demon_edge.png">
+<div class="developer__name-and-flag">
+<h3>Ark120202</h3>
+<img src="http://steamcommunity-a.akamaihd.net/public/images/countryflags/ru.gif">
+</div>
+<div class="developer__made">
+<ul>
+<li>Creator of <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=699441891">Angel Arena Black Star</a>.</li>
+</ul>
+</div>
+</div>
+<div class="developer">
+<img class="developer__hero" src="/images/icons/crest.png">
+<div class="developer__name-and-flag">
+<h3>Avalon Studio</h3>
+<img src="http://steamcommunity-a.akamaihd.net/public/images/countryflags/cn.gif">
+</div>
+<div class="developer__made">
+<ul>
+<li>Creators of <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=1205371753">Winterstorm</a>, <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=866471631">Realm Of Chaos - The Legend of Mt. Shu</a>, <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=616333146">Touhou Defence of the Shrines</a>, <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=524239685">NavalWarfare</a>, <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=520323982">Realm of Chaos</a> and <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=518202526">Battle of Mirkwood</a>.</li>
+</ul>
+</div>
+</div>
+<div class="developer">
+<img class="developer__hero" src="/images/icons/druid.png">
+<div class="developer__name-and-flag">
+<h3>Disorance</h3>
+<img src="http://steamcommunity-a.akamaihd.net/public/images/countryflags/ru.gif">
+</div>
+<div class="developer__made">
+<ul>
+<li>Creator of <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=500020226">Angel Arena Reborn</a>.</li>
+</ul>
+</div>
+</div>
+<div class="developer">
+<img class="developer__hero" src="/images/icons/alchemist.png">
+<div class="developer__name-and-flag">
+<h3>Yahnich</h3>
+<img src="http://steamcommunity-a.akamaihd.net/public/images/countryflags/be.gif">
+</div>
+<div class="developer__made">
+<ul>
+<li>Lead Developer of <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=305278898">Epic Boss Fight</a> and developer for <a target="_blank" href="http://steamcommunity.com/sharedfiles/filedetails/?id=1197063942">The Second Day of Frostivus</a>.</li>
+</ul>
+</div>
+</div>
+<div class="developer">
+<img class="developer__hero" src="/images/icons/leshrac.png">
+<div class="developer__name-and-flag">
+<h3>ChalkyBrush</h3>
+<img src="http://steamcommunity-a.akamaihd.net/public/images/countryflags/ca.gif">
+</div>
+<div class="developer__made">
+<ul>
+<li>Creator of <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=469311655">Roshpit Champions</a>.</li>
+</ul>
+</div>
+</div>
+<div class="developer">
+<img class="developer__hero" src="/images/icons/tome_of_knowledge.png">
+<div class="developer__name-and-flag">
+<h3>SinZ</h3>
+<img src="http://steamcommunity-a.akamaihd.net/public/images/countryflags/au.gif">
+</div>
+<div class="developer__made">
+<ul>
+<li>Acting Manager of <a target="_blank" href="https://moddota.com/">ModDota.com</a>.</li>
+</ul>
+</div>
+</div>
+<div class="developer">
+<img class="developer__hero" src="/images/icons/naturesprophet.png">
+<div class="developer__name-and-flag">
+<h3>StrangeR</h3>
+<img src="http://steamcommunity-a.akamaihd.net/public/images/countryflags/ru.gif">
+</div>
+<div class="developer__made">
+<ul>
+<li>Creator of <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=932631669">BIRZHA MEMOV</a>.</li>
+</ul>
+</div>
+</div>
+<div class="developer">
+<img class="developer__hero" src="/images/icons/bristleback.png">
+<div class="developer__name-and-flag">
+<h3>Zapp Brannigan</h3>
+<img src="http://steamcommunity-a.akamaihd.net/public/images/countryflags/va.gif">
+</div>
+<div class="developer__made">
+<ul>
+<li>Lead Developer of <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=476601122">WTF+</a>.</li>
+</ul>
+</div>
+</div>
+<div class="developer">
+<img class="developer__hero" src="/images/icons/earthspirit.png">
+<div class="developer__name-and-flag">
+<h3>Cookies</h3>
+<img src="http://steamcommunity-a.akamaihd.net/public/images/countryflags/fr.gif">
+</div>
+<div class="developer__made">
+<ul>
+<li>Lead Developer of <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=440115357">Dota IMBA</a>, creator of <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=536682348">X Hero Siege</a>, <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=520277859">All Bosses Challenge</a> and <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=1138461301">Epic Boss Challenge</a>.</li>
+</ul>
+</div>
+</div>
+<div class="developer">
+<img class="developer__hero" src="/images/icons/tinker.png">
+<div class="developer__name-and-flag">
+<h3>DoctorGester</h3>
+<img src="http://steamcommunity-a.akamaihd.net/public/images/countryflags/ru.gif">
+</div>
+<div class="developer__made">
+<ul>
+<li>Creator of <a target="_blank" href="http://steamcommunity.com/sharedfiles/filedetails/?id=473718711">Crumbling Island Arena</a> and <a target="_blank" href="http://steamcommunity.com/sharedfiles/filedetails/?id=1201422751">It&#39;s Greeviling!</a>.</li>
+</ul>
+</div>
+</div>
+<div class="developer">
+<img class="developer__hero" src="/images/icons/invoker.png">
+<div class="developer__name-and-flag">
+<h3>XavierCHN</h3>
+<img src="http://steamcommunity-a.akamaihd.net/public/images/countryflags/cn.gif">
+</div>
+<div class="developer__made">
+<ul>
+<li>Creator of <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=518202526&amp;searchtext=">Battle of Mirkwood</a>, <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=1092484716">BOM BattleRoyale</a>, <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=524239685">NavalWarfare</a> and <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=1165493298">Feastivus</a>.</li>
+</ul>
+</div>
+</div>
+<div class="developer">
+<img class="developer__hero" src="/images/icons/lotus_orb.png">
+<div class="developer__name-and-flag">
+<h3>Baumi</h3>
+<img src="http://steamcommunity-a.akamaihd.net/public/images/countryflags/de.gif">
+</div>
+<div class="developer__made">
+<ul>
+<li><a target="_blank" href="https://www.youtube.com/channel/UCmxX0QwCivAbRAXvPbEid8Q">Youtube Personality</a> and <a target="_blank" href="https://www.twitch.tv/l34um1">Twitch Streamer</a>. Creator of <a target="_blank" href="http://steamcommunity.com/sharedfiles/filedetails/?id=513926896">Open Angel Arena</a>, <a target="_blank" href="http://steamcommunity.com/sharedfiles/filedetails/?id=1197063942">The Second Day of Frostivus</a> and sponsor of <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=972949462">Pimp My Peon</a>.</li>
+</ul>
+</div>
+</div>
+<div class="developer">
+<img class="developer__hero" src="/images/icons/rubick.png">
+<div class="developer__name-and-flag">
+<h3>Diellan</h3>
+<img src="http://steamcommunity-a.akamaihd.net/public/images/countryflags/il.gif">
+</div>
+<div class="developer__made">
+<ul>
+<li>Creator of <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=472597026">Dota 2 Horde Mode</a>.</li>
+</ul>
+</div>
+</div>
+<div class="developer">
+<img class="developer__hero" src="/images/icons/mek.png">
+<div class="developer__name-and-flag">
+<h3>Shooper</h3>
+<img src="http://steamcommunity-a.akamaihd.net/public/images/countryflags/us.gif">
+</div>
+<div class="developer__made">
+<ul>
+<li>Creator of <a target="_blank" href="http://steamcommunity.com/sharedfiles/filedetails/?id=725282388">SWAT: Reborn</a> and <a target="_blank" href="http://steamcommunity.com/sharedfiles/filedetails/?id=1200619594">Snow Brawl</a>.</li>
+</ul>
+</div>
+</div>
+<div class="developer">
+<img class="developer__hero" src="/images/icons/pudge.png">
+<div class="developer__name-and-flag">
+<h3>Arhowk</h3>
+<img src="http://steamcommunity-a.akamaihd.net/public/images/countryflags/us.gif">
+</div>
+<div class="developer__made">
+<ul>
+<li>Creator of <a target="_blank" href="http://steamcommunity.com/sharedfiles/filedetails/?id=1158412580&amp;searchtext=">Snowtown Throwdown</a>, <a target="_blank" href="https://www.reddit.com/r/DotA2/comments/6uc841/diablo_2_in_dota_2_needs_your_help/">&quot;Diablo 2 in Dota 2&quot;</a> project and developer for <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=669883818">Banjoball Alpha</a>.</li>
+</ul>
+</div>
+</div>
+<div class="developer">
+<img class="developer__hero" src="/images/icons/viper.png">
+<div class="developer__name-and-flag">
+<h3>TidesofDark</h3>
+<img src="http://steamcommunity-a.akamaihd.net/public/images/countryflags/ru.gif">
+</div>
+<div class="developer__made">
+<ul>
+<li>Creator of <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=483720948">Petri Reborn</a> and <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=1165493298">Feastivus</a> and developer for <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=717356279">Legends of Dota: Redux</a>.</li>
+</ul>
+</div>
+</div>
+<div class="developer">
+<img class="developer__hero" src="/images/icons/wisp.png">
+<div class="developer__name-and-flag">
+<h3>Toyoka</h3>
+<img src="http://steamcommunity-a.akamaihd.net/public/images/countryflags/ca.gif">
+</div>
+<div class="developer__made">
+<ul>
+<li>Creator of <a target="_blank" href="http://steamcommunity.com/sharedfiles/filedetails/?id=1158412580&amp;searchtext=">Snowtown Throwdown</a> and <a target="_blank" href="http://steamcommunity.com/sharedfiles/filedetails/?id=1182695521">Wisp Cosmetic Set</a>.</li>
+</ul>
+</div>
+</div>
+<div class="developer">
+<img class="developer__hero" src="/images/icons/mindstealer.png">
+<div class="developer__name-and-flag">
+<h3>Usagi Majo Arctangent</h3>
+<img src="http://steamcommunity-a.akamaihd.net/public/images/countryflags/us.gif">
+</div>
+<div class="developer__made">
+<ul>
+<li>Creator of <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=904834212&amp;searchtext=">Bob Wars</a>, <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=838016297">DOTA 2 But ...</a>, <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=964909547">Randymizer</a>, <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=830359459">DOTA 2 but every Hero is secretly also Chen</a>, <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=1170382864">ARAM: Murder Isthmus</a> and developer for <a target="_blank" href="http://steamcommunity.com/sharedfiles/filedetails/?id=1197063942">The Second Day of Frostivus</a>.</li>
+</ul>
+</div>
+</div>
+<div class="developer">
+<img class="developer__hero" src="/images/icons/bottle.png">
+<div class="developer__name-and-flag">
+<h3>Chrisinajar</h3>
+<img src="http://steamcommunity-a.akamaihd.net/public/images/countryflags/us.gif">
+</div>
+<div class="developer__made">
+<ul>
+<li><a target="_blank" href="https://github.com/chrisinajar">Open source contributor</a> and creator of <a target="_blank" href="http://steamcommunity.com/sharedfiles/filedetails/?id=513926896">Open Angel Arena</a>, <a target="_blank" href="http://steamcommunity.com/sharedfiles/filedetails/?id=1197063942">The Second Day of Frostivus</a> and pre-reborn mod &#39;MNI Mode&#39;.</li>
+</ul>
+</div>
+</div>
+<div class="developer">
+<img class="developer__hero" src="/images/icons/dagon_3.png">
+<div class="developer__name-and-flag">
+<h3>Mocherad</h3>
+<img src="http://steamcommunity-a.akamaihd.net/public/images/countryflags/ua.gif">
+</div>
+<div class="developer__made">
+<ul>
+<li>Creator of <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=575540979">Pure Reflex</a>, <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=1209178917">Frostivus: The Snowman&#39;s Story</a>, <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=867129063">Duel</a> and <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=1165493298">Feastivus</a>.</li>
+</ul>
+</div>
+</div>
+<div class="developer">
+<img class="developer__hero" src="/images/icons/troll.png">
+<div class="developer__name-and-flag">
+<h3>Vendivar</h3>
+<img src="http://steamcommunity-a.akamaihd.net/public/images/countryflags/us.gif">
+</div>
+<div class="developer__made">
+<ul>
+<li>Creator of <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=801065815">Island Troll Tribes 2</a>.</li>
+</ul>
+</div>
+</div>
+<div class="developer">
+<img class="developer__hero" src="/images/icons/puck.png">
+<div class="developer__name-and-flag">
+<h3>Bread</h3>
+<img src="http://steamcommunity-a.akamaihd.net/public/images/countryflags/au.gif">
+</div>
+<div class="developer__made">
+<ul>
+<li>Creator of <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=426167013">Dusk</a>.</li>
+</ul>
+</div>
+</div>
+<div class="developer">
+<img class="developer__hero" src="/images/icons/shadowfiend.png">
+<div class="developer__name-and-flag">
+<h3>Darklord</h3>
+<img src="http://steamcommunity-a.akamaihd.net/public/images/countryflags/au.gif">
+</div>
+<div class="developer__made">
+<ul>
+<li>Lead Developer of <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=717356279">Legends of Dota: Redux</a> and creator of <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=1165493298">Feastivus</a>.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
